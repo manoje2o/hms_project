@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-table-thead > tr > th {
+  background-color: #001529 !important; /* Dark blue */
+  color: white !important;
+  text-align: center;
+}
+/* Custom color for sort and filter icons */
+.ant-table-column-sorter-up.active,
+.ant-table-column-sorter-down.active,
+.ant-table-filter-trigger.active {
+  color: #1890ff !important; /* Change this to any color you want */
+}
+
+/* Optional: style inactive icons as well */
+.ant-table-column-sorter-up,
+.ant-table-column-sorter-down,
+.ant-table-filter-trigger {
+  color: #999;
+}
+/* Target modal wrapper */
+.custom-ant-modal .ant-modal-content {
+  background-color: #1e1e2f;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+}
+
+/* Title styling */
+.custom-ant-modal .ant-modal-title {
+  color: #00ffcc;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Close button */
+.custom-ant-modal .ant-modal-close {
+  color: #ff6f61;
+}
+
+/* Modal body */
+.custom-ant-modal .ant-modal-body {
+  font-size: 16px;
+}
+
+/* Optional: backdrop (overlay) */
+.custom-ant-modal .ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+/* Active (when filter is applied) */
+.ant-table-filter-trigger.active {
+  color: #1890ff !important; /* Active filter color */
+}
+
+/* Inactive/default state */
+.ant-table-filter-trigger {
+  color: #999 !important; /* Inactive filter icon color */
+}
+.doctor-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.doctor-qual {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+}

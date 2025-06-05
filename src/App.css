@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #001529 !important; /* Dark blue */
+  color: white !important;
+  text-align: center;
+}
