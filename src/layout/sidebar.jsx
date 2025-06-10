@@ -11,6 +11,12 @@ import {
 import { Menu, Button } from 'antd';
 import { CiSettings } from 'react-icons/ci';
 import { Link, useLocation } from 'react-router-dom';
+import { FaHospitalUser } from "react-icons/fa6";
+import { FaUserMd } from "react-icons/fa";
+import { FaFileInvoice ,FaSortAmountUp,FaFilePrescription   } from "react-icons/fa";
+import { MdInventory } from "react-icons/md";
+import { RiPieChart2Fill } from "react-icons/ri";
+import { IoSettings } from "react-icons/io5";
 
 const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -34,12 +40,12 @@ const Sidebar = () => {
   const items = [
     {
       key: '/dashboard',
-      icon: <PieChartOutlined />,
+      icon: <RiPieChart2Fill size={18}   />,
       label: <Link to="/dashboard" style={{ textDecoration: 'none' }} >Dashboard</Link>,
     },
     {
       key: 'sub1',
-      icon: <MailOutlined />,
+      icon: <FaHospitalUser size={18}   />,
       label: 'Patients and Doctors',
       children: [
         {
@@ -54,7 +60,7 @@ const Sidebar = () => {
     },
       {
       key: 'User Management',
-      icon: <MailOutlined />,
+      icon: <FaUserMd size={18}   />,
       label: "User Management",
        children: [
         {
@@ -69,13 +75,30 @@ const Sidebar = () => {
     },
       {
       key: 'Priscription',
-      icon: <BsPrescription2 size={18}  />,
+      icon: <FaFilePrescription  size={18}  />,
       label: <Link to="/prescription" style={{ textDecoration: 'none' }}>prescription </Link>,
+    },
+     
+      {
+      key: 'Invoice',
+      icon: <FaFileInvoice size={18}  />,
+      label: <Link to="/invoice" style={{ textDecoration: 'none' }}>Invoice </Link>,
+    },
+     
+      {
+      key: 'Expance',
+      icon: <FaSortAmountUp size={18}  />,
+      label: <Link to="/expanse" style={{ textDecoration: 'none' }}>Expance </Link>,
+    },
+      {
+      key: 'Inventary',
+      icon: <MdInventory size={18}  />,
+      label: <Link to="/inventary" style={{ textDecoration: 'none' }}>Inventary </Link>,
     },
      
     {
       key: '/settings',
-      icon: <CiSettings size={20} />,
+      icon: <IoSettings size={20} />,
       label: <Link to="/hospital"style={{ textDecoration: 'none' }}>Settings</Link>,
     },
    
@@ -87,7 +110,7 @@ const Sidebar = () => {
         width: collapsed ? 80 : 240,
         height: '100vh',
         transition: 'width 0.3s',
-        backgroundColor: '#001529',
+        backgroundColor: '#0D5C63',
       }}
       className="text-white d-flex flex-column"
     >
@@ -102,12 +125,12 @@ const Sidebar = () => {
       </div>
 
       <Menu
-        theme="dark"
+        // theme="dark"
         mode="inline"
         inlineCollapsed={collapsed}
         selectedKeys={[location.pathname]}
         items={items}
-        className="flex-grow-1"
+        className="flex-grow-1 custom-sidebar-menu"
       />
     </div>
   );

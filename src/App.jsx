@@ -11,6 +11,9 @@ import Role from './pages/role';
 import Prescription from './pages/prescription';
 import Dashboard from './pages/dashboard';
 import Member from './pages/members';
+import Invoice from './pages/invoice';
+import Inventary from './pages/inventary';
+import Expanse from './pages/expense';
 const App = () => {
   return (
     <>
@@ -24,6 +27,9 @@ const App = () => {
           <Route path="role" element={<Role/>} />
           <Route path="prescription" element={<Prescription/>} />
           <Route path="newmember" element={<Member/>} />
+          <Route path="invoice" element={<Invoice/>} />
+          <Route path="inventary" element={<Inventary/>} />
+          <Route path="expanse" element={<Expanse/>} />
         </Route>
       </Routes>
       <Toaster  />

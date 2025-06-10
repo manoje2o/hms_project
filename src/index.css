@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .ant-table-thead > tr > th {
-  background-color: #001529 !important; /* Dark blue */
+  background-color: #0D5C63 !important; /* Dark blue */
   color: white !important;
   text-align: center;
 }
@@ -11,9 +11,8 @@
 .ant-table-column-sorter-up.active,
 .ant-table-column-sorter-down.active,
 .ant-table-filter-trigger.active {
-  color: #1890ff !important; /* Change this to any color you want */
+  color: #1890FF !important; /* Change this to any color you want */
 }
-
 /* Optional: style inactive icons as well */
 .ant-table-column-sorter-up,
 .ant-table-column-sorter-down,
@@ -22,39 +21,34 @@
 }
 /* Target modal wrapper */
 .custom-ant-modal .ant-modal-content {
-  background-color: #1e1e2f;
+  background-color: #1E1E2F;
   color: white;
   border-radius: 12px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
   padding: 20px;
 }
-
 /* Title styling */
 .custom-ant-modal .ant-modal-title {
-  color: #00ffcc;
+  color: #00FFCC;
   font-weight: bold;
   font-size: 20px;
 }
-
 /* Close button */
 .custom-ant-modal .ant-modal-close {
-  color: #ff6f61;
+  color: #FF6F61;
 }
-
 /* Modal body */
 .custom-ant-modal .ant-modal-body {
   font-size: 16px;
 }
-
 /* Optional: backdrop (overlay) */
 .custom-ant-modal .ant-modal-mask {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 /* Active (when filter is applied) */
 .ant-table-filter-trigger.active {
-  color: #1890ff !important; /* Active filter color */
+  color: #1890FF !important; /* Active filter color */
 }
-
 /* Inactive/default state */
 .ant-table-filter-trigger {
   color: #999 !important; /* Inactive filter icon color */
@@ -62,11 +56,79 @@
 .doctor-name {
   font-size: 28px;
   font-weight: 700;
-  color: #1f1f1f;
+  color: #1F1F1F;
 }
-
 .doctor-qual {
   font-size: 18px;
   font-weight: 500;
   color: #555;
 }
+body {
+  background-image: url('/src/assets/bg-medical.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+.custom-sidebar-menu {
+  position: relative;
+  background-color: #0D5C63; /* Dark teal green */
+  color: white !important;
+  z-index: 1;
+}
+.custom-sidebar-menu .ant-menu-item,
+.custom-sidebar-menu .ant-menu-submenu-title {
+  background-color: transparent !important;
+  color: white !important;
+  font-weight : bold;
+}
+/* Menu items and submenu titles */
+.custom-sidebar-menu .ant-menu-item,
+.custom-sidebar-menu .ant-menu-submenu-title {
+  color: white !important;
+}
+/* Anchor tags inside menu */
+.custom-sidebar-menu .ant-menu-item a,
+.custom-sidebar-menu .ant-menu-submenu-title a {
+  color: white !important;
+}
+/* Selected item */
+.custom-sidebar-menu .ant-menu-item-selected {
+  background-color: #117A8B !important;
+  color: white !important;
+}
+/* Selected item link */
+.custom-sidebar-menu .ant-menu-item-selected a {
+  color: white !important;
+}
+/* Hover text color */
+.custom-sidebar-menu .ant-menu-item:hover,
+.custom-sidebar-menu .ant-menu-submenu-title:hover {
+  color: #fff !important; /* Change this to your desired hover color */
+  background-color: #117A8B !important;
+}
+/* Optional: Change background on hover */
+.custom-sidebar-menu .ant-menu-item:hover {
+  background-color: #117A8B !important; /* Slightly lighter than #0D5C63 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
